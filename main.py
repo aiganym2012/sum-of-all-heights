@@ -1,28 +1,21 @@
 # 🚨 Don't change the code below 👇
-print("Welcome to Python Pizza Deliveries!")
-size = input("What size pizza do you want? S, M, or L ")
-add_pepperoni = input("Do you want pepperoni? Y or N ")
-extra_cheese = input("Do you want extra cheese? Y or N ")
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
 # 🚨 Don't change the code above 👆
 
 #Write your code below this line 👇
-price=0
-if size== "S":
-  price+= 15
-elif size=="M":
-  price+=20
-elif size== "L":
-  price+=25
+name11= name1.lower() 
+name22= name2.lower() 
+true = name11.count("t") + name11.count("r") + name11.count("u") + name11.count("e") + name22.count("t") + name22.count("r") + name22.count("u") + name22.count("e")
+love = name11.count("l") + name11.count("o") + name11.count("v") + name11.count("e") + name22.count("l") + name22.count("o") + name22.count("v") + name22.count("e")
+z = int(str(true) + str(love))
+print(z)
 
-if add_pepperoni == "Y":
-  if size=="S":
-    price+=2
-  else:
-    price+=3
+if z<10  or z>90:
+  print(f"Your score is {z}, you go together like coke and mentos.")
+elif z>40 and z<50:
+  print(f"Your score is {z}, you are alright together.")
 else:
-  price
+  print(f"Your score is {z}.")
 
-if extra_cheese== "Y":
-  print (f"Your final bill is: ${price+1}.")
-else:
-  print (f"Your final bill is: ${price}.")
