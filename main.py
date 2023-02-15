@@ -1,12 +1,19 @@
-# Import the random module here
-import random
-# Split string method
-names_string = input("Give me everybody's names, separated by a comma. ")
-names = names_string.split(", ")
+# 🚨 Don't change the code below 👇
+student_heights = input("Input a list of student heights ").split()
+for n in range(0, len(student_heights)):
+  student_heights[n] = int(student_heights[n])
 # 🚨 Don't change the code above 👆
 
-#Write your code below this line 👇
-print(names)
-sum=random.randint(0, len(names))
-who=names[sum]
-print(f"{who} is going to buy the meal today!" )
+
+#Write your code below this row 👇
+a=0
+for heights in student_heights:
+  a+=heights
+
+b=0
+for sum in student_heights:
+  b+=1
+#totoal height
+
+avarage_height= round(a/b)
+print(avarage_height)
